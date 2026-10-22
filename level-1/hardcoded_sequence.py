@@ -1,7 +1,11 @@
 
 
-maximum = int(input('set a maximum for the sequence: '))
-
+while True:
+    try:
+        maximum = int(input('set a maximum for the sequence: '))
+        break
+    except ValueError:
+        print('the input must be a number')
 
 sequence = """ 
 1 1 2 3 
